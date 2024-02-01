@@ -1,0 +1,9 @@
+{
+    "name": "trio/sales",
+    "description": "sales",
+    "type": "project",
+    "minimum-stability": "dev",
+    "require": {
+        "razorpay/razorpay": "^2.8"
+    }
+}

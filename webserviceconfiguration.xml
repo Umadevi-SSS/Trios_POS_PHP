@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!-- Webservice log Configuration files-->
+<configuration xmlns="http://logging.apache.org/log4php/">
+	<appender name="myConsoleAppender" class="LoggerAppenderConsole" />
+
+	 <appender name="errorDef" class="LoggerAppenderDailyFile" threshold="error">
+	   <param name="append" value="true"/>
+	    <layout class="LoggerLayoutPattern">
+	       <param name="conversionPattern" value="%date{Y-m-d H:i:s,u} [%logger] %message%newline" />
+	    </layout>       
+	    <param name="file" value="errorlogs/webservice/ws-error-log-%s.log" />
+	    <param name="datePattern" value="Y-m-d" />       
+	</appender>
+	<root>
+    	 <appender_ref ref="errorDef" /> 
+	</root>
+</configuration>
