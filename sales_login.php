@@ -22,6 +22,8 @@ $userid = "";
 $json = file_get_contents('php://input');
 $data1 = json_decode($json);
 
+// $data1 =json_decode('{"userid":"uma@gmail.com","passcode":"12345"}');
+
 if (isset($data1->passcode)) {
  $passcode = $data1->passcode;
 } else {
@@ -57,55 +59,79 @@ $output = base64_encode(openssl_encrypt(urldecode($passcode), 'AES-256-CBC', $ke
 
 // echo $output;
 
-$sql = "SELECT a.id,a.user_name,CAST(a.client_id AS CHAR(50)) as client_id,COALESCE(b.privacy_policy,'') AS privacy_policy
+$sql = "SELECT a.status,a.id,a.user_name,CAST(a.client_id AS CHAR(50)) as client_id,COALESCE(b.privacy_policy,'') AS privacy_policy
  FROM tbl_user_profile AS a LEFT  JOIN tbl_privacy_policy AS b ON a.id=b.user_id 
-WHERE a.passcode='" . $output . "' AND a.user_id='" . $userid . "' AND a.status=1 ORDER BY b.id DESC LIMIT 1";
+WHERE a.passcode='" . $output . "' AND a.user_id='" . $userid . "' and a.status<>0  ORDER BY b.id DESC LIMIT 1";
 
 $salecode = "";
 //echo $sql;
 $result = mysqli_query($con, $sql);
 $row = mysqli_fetch_array($result);
 
-if (!empty($result)) {
- // check for empty result
- if (mysqli_num_rows($result) > 0) {
+    if (!empty($result)) {
+    // check for empty result
+        if (mysqli_num_rows($result) > 0) {
 
-  $response["userid"] = $row["id"];
-  $response["privacy_policy"] = $row["privacy_policy"];
+            if ($row["status"] == "2") {
+                $response["userid"] = "";
+                $response["privacy_policy"] = "";
 
-  $response["username"] = $row["user_name"];
-  $response["clientid"] = $row["client_id"];
-  // success
-  $response["success"] = 1;
+                $response["username"] = "";
+                $response["clientid"] = "";
 
-  // echoing JSON response
+                $response["success"] = 2;
+                $response["message"] = "Your subscription plan has expired. Pls renewal your subscription.";
+            }
+            else if ($row["status"] == "3") { 
+                $response["userid"] = "";
+                $response["privacy_policy"] = "";
 
- } else {
-  // no user found
-  $response["userid"] = "";
-  $response["username"] = "";
-  $response["privacy_policy"] = "";
-  $response["clientid"] = "";
-  $response["success"] = 0;
-  $response["message"] = "No Report found";
+                $response["username"] = "";
+                $response["clientid"] = "";
 
-  // echo no users JSON
+                $response["success"] = 3;
+                $response["message"] = "Your trial period has expired. Pls enable your subscription.";
+            } else {
+                $response["userid"] = $row["id"];
+                $response["privacy_policy"] = $row["privacy_policy"];
+    
+                $response["username"] = $row["user_name"];
+                $response["clientid"] = $row["client_id"];
+                $response["message"] = "Successfully Logged in.";
+                // success
+                $response["success"] = 1;
+            }
 
- }
-} else {
- // no user found
- $response["userid"] = "";
- $response["privacy_policy"] = "";
+           
 
- $response["username"] = "";
- $response["clientid"] = "";
+        // echoing JSON response
 
- $response["success"] = 0;
- $response["message"] = "No found";
+        } else {
+        // no user found
+            $response["userid"] = "";
+            $response["username"] = "";
+            $response["privacy_policy"] = "";
+            $response["clientid"] = "";
+            $response["success"] = 0;
+            $response["message"] = "Username and Password is incorrect.";
 
- // echo no users JSON
+        // echo no users JSON
 
-}
+        }
+    } else {
+    // no user found
+        $response["userid"] = "";
+        $response["privacy_policy"] = "";
 
-echo json_encode($response, JSON_UNESCAPED_UNICODE);
-mysqli_close($con);
+        $response["username"] = "";
+        $response["clientid"] = "";
+
+        $response["success"] = 0;
+        $response["message"] = "Username and Password is incorrect.";
+
+    // echo no users JSON
+
+    }
+
+    echo json_encode($response, JSON_UNESCAPED_UNICODE);
+    mysqli_close($con);

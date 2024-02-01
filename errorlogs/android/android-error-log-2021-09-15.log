@@ -1,0 +1,75 @@
+2021-09-15 07:00:50,250 [pavalam] 
+ Log date is 2021-09-15 07:00:50am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 08:50:24,713 [pavalam] 
+ Log date is 2021-09-15 08:50:24am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 09:18:32,274 [pavalam] 
+ Log date is 2021-09-15 09:18:32am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 09:24:14,127 [pavalam] 
+ Log date is 2021-09-15 09:24:14am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 09:50:25,712 [pavalam] 
+ Log date is 2021-09-15 09:50:25am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 09:52:27,379 [pavalam] 
+ Log date is 2021-09-15 09:52:27am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 09:56:46,819 [pavalam] 
+ Log date is 2021-09-15 09:56:46am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 11:51:25,725 [pavalam] 
+ Log date is 2021-09-15 11:51:25am
+ Classname - Android : HistoryFragement 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 11:52:22,487 [pavalam] 
+ Log date is 2021-09-15 11:52:22am
+ Classname - Android : HistoryFragement 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 11:53:31,879 [pavalam] 
+ Log date is 2021-09-15 11:53:31am
+ Classname - Android : HistoryFragement 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 12:30:35,139 [pavalam] 
+ Log date is 2021-09-15 12:30:35pm
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference
+2021-09-15 14:20:54,743 [pavalam] 
+ Log date is 2021-09-15 02:20:54pm
+ Classname - Android : LoginActivity 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 15:48:58,901 [pavalam] 
+ Log date is 2021-09-15 03:48:58pm
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2021-09-15 17:36:36,519 [pavalam] 
+ Log date is 2021-09-15 05:36:36pm
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'int java.lang.String.length()' on a null object reference
+2021-09-15 17:36:36,650 [pavalam] 
+ Log date is 2021-09-15 05:36:36pm
+ Classname - Android : HomeFragment 
+ Functionname - onPostExecute 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'int org.json.JSONObject.getInt(java.lang.String)' on a null object reference

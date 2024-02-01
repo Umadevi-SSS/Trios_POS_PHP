@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<?php
+<?php 
 header('Access-Control-Allow-Headers: Access-Control-Allow-Origin, Content-Type');
 header('Access-Control-Allow-Origin: *');
 
@@ -100,19 +100,20 @@ $result_update_orderid = mysqli_query($con, $updateorderid);
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 <script>
+    alert('df')
     var options = {
         key: 'rzp_test_odilvJ4uBrslqs',
-        amount: <?php echo $order->amount; ?>,
-        currency: '<?php echo $order->currency; ?>',
+        amount: 1.00,
+        currency: 'INR',
         name: 'Trio-S Software Consultancy Pvt Ltd',
         description: 'Payment for your product or service',
         image: 'path/to/your/logo.png',
-        order_id: '<?php echo $order->id; ?>',
-        prefill: {
-            name: <?php echo $customer_name; ?>,
-            email: <?php echo $customer_email; ?>,
-            contact: <?php echo $customer_mobileno; ?>
-        },
+        order_id: '123',
+        // prefill: {
+        //     name: <?php echo $customer_name; ?>,
+        //     email: <?php echo $customer_email; ?>,
+        //     contact: <?php echo $customer_mobileno; ?>
+        // },
         theme: {
             color: '#3399cc'
         }

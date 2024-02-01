@@ -1,0 +1,8 @@
+2023-12-27 05:33:47,402 [pavalam] Error number: [2] 
+ Error Description: [array_push() expects parameter 1 to be array, null given] 
+ Error File: [D:\xampp\htdocs\POSSales\get_plan.php] 
+ Error Line: [36]
+2023-12-27 05:33:47,407 [pavalam] Error number: [2] 
+ Error Description: [array_push() expects parameter 1 to be array, null given] 
+ Error File: [D:\xampp\htdocs\POSSales\get_plan.php] 
+ Error Line: [36]

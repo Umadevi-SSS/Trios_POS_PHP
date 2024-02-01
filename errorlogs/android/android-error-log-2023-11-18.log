@@ -1,0 +1,35 @@
+2023-11-18 09:11:17,621 [pavalam] 
+ Log date is 2023-11-18 09:11:17am
+ Classname - Android : SplashScreen 
+ Functionname - turnGPSOn 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.contains(java.lang.CharSequence)' on a null object reference
+2023-11-18 09:11:23,534 [pavalam] 
+ Log date is 2023-11-18 09:11:23am
+ Classname - Android : LoginActivity 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-18 09:11:54,021 [pavalam] 
+ Log date is 2023-11-18 09:11:54am
+ Classname - Android : LoginActivity 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-18 09:12:03,776 [pavalam] 
+ Log date is 2023-11-18 09:12:03am
+ Classname - Android : LoginActivity 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-18 09:18:40,209 [pavalam] 
+ Log date is 2023-11-18 09:18:40am
+ Classname - Android : LoginActivity 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-18 09:42:26,171 [pavalam] 
+ Log date is 2023-11-18 09:42:26am
+ Classname - Android : SplashScreen 
+ Functionname - turnGPSOn 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.contains(java.lang.CharSequence)' on a null object reference
+2023-11-18 09:48:35,843 [pavalam] 
+ Log date is 2023-11-18 09:48:35am
+ Classname - Android : LoginActivity 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference

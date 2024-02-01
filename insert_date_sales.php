@@ -63,8 +63,8 @@ foreach ($data1->salesdata as $item) {
   $sql_con = "SELECT * FROM  tbl_pos_date_sales WHERE transactionno=".$item->transactionno." AND client_id=".$item->clientid."";
   $result = mysqli_query($con, $sql_con);
   if (empty($result) || mysqli_num_rows($result) <= 0) {
-    if ($item->status == 'Active') {
-      $insertsales = "INSERT INTO tbl_pos_date_sales (bill_date,amount,company_code,billno,transactionno,created_at,client_id) values (DATE_FORMAT(STR_TO_DATE('" . $item->billdate . "', '%d/%m/%Y'), '%Y-%m-%d'),$item->amount,$item->companycode,$item->billno,$item->transactionno,NOW(),$item->clientid)";
+    if ($item->status == 'Active' || $item->status == '1') {
+      $insertsales = "INSERT INTO tbl_pos_date_sales (bill_date,amount,company_code,billno,transactionno,created_at,client_id) values (DATE_FORMAT(STR_TO_DATE('" . $item->billdate . "', '%d/%m/%Y'), '%Y-%m-%d'),$item->amount,$item->companycode,'" . $item->billno ."',$item->transactionno,NOW(),$item->clientid)";
       $result_insert = mysqli_query($con, $insertsales);
     }
   } else {

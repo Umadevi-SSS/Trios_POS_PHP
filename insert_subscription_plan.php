@@ -67,7 +67,6 @@ $sql = "SELECT a.status,b.plan_type FROM tbl_user_profile AS a INNER JOIN tbl_po
             
             $result_plan = mysqli_query($con, $insertplandetails);
             $lastInsertId = mysqli_insert_id($con);
-            $response["receipt_id"] = $lastInsertId;
             if ($data1->plan_type == "1") {
                 $status = "1";
             } else {
@@ -82,6 +81,9 @@ $sql = "SELECT a.status,b.plan_type FROM tbl_user_profile AS a INNER JOIN tbl_po
 
             if ($data1->plan_type == "2") {
             }
+            $response["msg"] = 'Successfully registered.';
+            
+            $response["receipt_id"] = $lastInsertId;
         }
         else if ($data1->plan_type == "1") {
             $response["msg"] = 'Already register. Please renewal the subscription.';
@@ -91,9 +93,9 @@ $sql = "SELECT a.status,b.plan_type FROM tbl_user_profile AS a INNER JOIN tbl_po
             return;
 
         }
-        else if ($row['status'] == "1") {
+        else if ($row['status'] == "1" && $row['plan_type'] != "1") {
             $response["msg"] = 'Already register for this email id.';
-            $response["success"] = 3;
+            $response["success"] = 2;
             $response["receipt_id"] = 0;
             echo json_encode($response, JSON_UNESCAPED_UNICODE);
             return;
@@ -116,10 +118,10 @@ $sql = "SELECT a.status,b.plan_type FROM tbl_user_profile AS a INNER JOIN tbl_po
                 
             }
 
-            $insertuser = "UPDATE tbl_user_profile SET status='0',mobile_id = '" . $lastInsertId . "' WHERE 
-            user_id='" . $data1->email_id . "'";
+            // $insertuser = "UPDATE tbl_user_profile SET status='0',mobile_id = '" . $lastInsertId . "' WHERE 
+            // user_id='" . $data1->email_id . "'";
     
-            $result_user = mysqli_query($con, $insertuser);
+            // $result_user = mysqli_query($con, $insertuser);
         }
     }
 

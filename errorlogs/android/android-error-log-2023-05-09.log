@@ -1,0 +1,5 @@
+2023-05-09 01:25:26,720 [pavalam] 
+ Log date is 2023-05-09 01:25:26am
+ Classname - Android : SplashScreen 
+ Functionname - turnGPSOn 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.contains(java.lang.CharSequence)' on a null object reference

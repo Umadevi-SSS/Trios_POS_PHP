@@ -77,6 +77,7 @@ ORDER BY transactionno DESC";
  
             // echo no users JSON
             echo json_encode($response);
+            return;
         }
     } else {
         // no user found
@@ -87,6 +88,7 @@ ORDER BY transactionno DESC";
  
         // echo no users JSON
         echo json_encode($response);
+        return;
     }
 
     echo  json_encode($response,JSON_UNESCAPED_UNICODE);

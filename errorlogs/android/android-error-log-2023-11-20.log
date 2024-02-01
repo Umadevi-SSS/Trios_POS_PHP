@@ -1,0 +1,80 @@
+2023-11-20 09:03:15,449 [pavalam] 
+ Log date is 2023-11-20 09:03:15am
+ Classname - Android : SplashScreen 
+ Functionname - turnGPSOn 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.contains(java.lang.CharSequence)' on a null object reference
+2023-11-20 09:03:21,616 [pavalam] 
+ Log date is 2023-11-20 09:03:21am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-20 09:03:30,111 [pavalam] 
+ Log date is 2023-11-20 09:03:30am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-20 09:03:30,212 [pavalam] 
+ Log date is 2023-11-20 09:03:30am
+ Classname - Android : HomeFragment 
+ Functionname - onPostExecute 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String org.json.JSONObject.getString(java.lang.String)' on a null object reference
+2023-11-20 09:03:42,255 [pavalam] 
+ Log date is 2023-11-20 09:03:42am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-20 09:03:42,417 [pavalam] 
+ Log date is 2023-11-20 09:03:42am
+ Classname - Android : HomeFragment 
+ Functionname - onPostExecute 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String org.json.JSONObject.getString(java.lang.String)' on a null object reference
+2023-11-20 09:04:03,702 [pavalam] 
+ Log date is 2023-11-20 09:04:03am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-20 09:04:03,794 [pavalam] 
+ Log date is 2023-11-20 09:04:03am
+ Classname - Android : HomeFragment 
+ Functionname - onPostExecute 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String org.json.JSONObject.getString(java.lang.String)' on a null object reference
+2023-11-20 09:13:47,368 [pavalam] 
+ Log date is 2023-11-20 09:13:47am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-20 09:13:47,413 [pavalam] 
+ Log date is 2023-11-20 09:13:47am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-20 09:13:47,647 [pavalam] 
+ Log date is 2023-11-20 09:13:47am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
+2023-11-20 09:13:47,757 [pavalam] 
+ Log date is 2023-11-20 09:13:47am
+ Classname - Android : HomeFragment 
+ Functionname - onPostExecute 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String org.json.JSONObject.getString(java.lang.String)' on a null object reference
+2023-11-20 09:13:47,800 [pavalam] 
+ Log date is 2023-11-20 09:13:47am
+ Classname - Android : HomeFragment 
+ Functionname - onPostExecute 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String org.json.JSONObject.getString(java.lang.String)' on a null object reference
+2023-11-20 09:13:47,864 [pavalam] 
+ Log date is 2023-11-20 09:13:47am
+ Classname - Android : HomeFragment 
+ Functionname - onPostExecute 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String org.json.JSONObject.getString(java.lang.String)' on a null object reference
+2023-11-20 09:15:14,885 [pavalam] 
+ Log date is 2023-11-20 09:15:14am
+ Classname - Android : SplashScreen 
+ Functionname - turnGPSOn 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'boolean java.lang.String.contains(java.lang.CharSequence)' on a null object reference
+2023-11-20 09:15:20,033 [pavalam] 
+ Log date is 2023-11-20 09:15:20am
+ Classname - Android : HomeFragment 
+ Functionname - doInBackground 
+ Exception Error - java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.Object android.content.Context.getSystemService(java.lang.String)' on a null object reference
